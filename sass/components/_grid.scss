@@ -1,0 +1,76 @@
+// .grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, auto);
+//     gap: 2rem;
+//     justify-content: center;
+//     // align-items: center;
+//     &__item {
+//         display: flex;
+//         // justify-content: center;
+//         align-items: center;
+//         gap: 1rem;
+//         .icon {
+//             $icon--size: 100px;
+//             width: $icon--size;
+//             height: $icon--size;
+//         }
+//     }
+// }
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 2rem 1rem;
+  #skills > & {
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2rem;
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      align-items: center;
+      .icon {
+        $icon--size: 100px;
+        max-width: $icon--size;
+        max-height: $icon--size;
+        width: 100%;
+        height: 100%;
+      }
+      .heading {
+        align-items: flex-start;
+        justify-content: flex-start;
+        display: none;
+        @media ($breakpoint-lg) {
+          display: block;
+        }
+      }
+    }
+    &--margin-top {
+      margin-top: 2rem;
+    }
+  }
+  &--contact {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "image"
+      "heading"
+      "form";
+    @media ($breakpoint-lg) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "heading heading"
+        "image form";
+    }
+    .heading {
+      grid-area: heading;
+    }
+    .form {
+      grid-area: form;
+    }
+    .image {
+      grid-area: image;
+    }
+  }
+}

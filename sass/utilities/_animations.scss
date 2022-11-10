@@ -1,0 +1,61 @@
+// Animations
+
+// Classes
+.show {
+  animation: fadeIn .2s ease-in,
+  scaleUp .2s ease-in;
+}
+
+.hide {
+  animation: fadeOut .02s ease-out,
+  scaleDown .02s ease-out;
+}
+
+// Fade in
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// Fade out
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// Move up
+@keyframes moveUp {
+  from {
+    transform: translateY(.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+// Scale up
+@keyframes scaleUp {
+  from {
+    transform: scale(.98);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+// Scale down
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.98);
+  }
+}

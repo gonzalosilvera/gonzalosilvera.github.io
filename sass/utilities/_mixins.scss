@@ -1,0 +1,78 @@
+// Mixins
+
+// Container
+@mixin container {
+  // X-Small devices (portrait phones, less than 576px)
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+
+  // Small devices (landscape phones, 576px and up)
+  @media ($breakpoint-sm) {
+    width: 540px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media ($breakpoint-md) {
+    width: 720px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media ($breakpoint-lg) {
+    width: 960px;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media ($breakpoint-xl) {
+    width: 1140px;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media ($breakpoint-xxl) {
+    width: 1320px;
+  }
+}
+
+// Heading
+@mixin heading($color, $background-color) {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  color: $color;
+  background-color: $background-color;
+}
+
+// Button
+@mixin btn(
+  $color,
+  $bg-color,
+  $border-color,
+  $hover--color,
+  $hover--bg-color,
+  $hover--border-color
+) {
+  display: inline-block;
+  color: $color;
+  background-color: $bg-color;
+  border: $border-color solid 1px;
+  $btn-transition: 0.4s;
+  @media ($breakpoint-lg) {
+    transition: color $btn-transition, background-color $btn-transition,
+      border-color $btn-transition;
+    &:hover {
+      color: $hover--color;
+      background-color: $hover--bg-color;
+      border: $hover--border-color solid 1px;
+    }
+  }
+}
+
+// Toggle
+@mixin line-values {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: $toggle__icon--line-height;
+  background-color: $header--color;
+}

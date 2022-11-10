@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    &__label {
+     margin-top: .5rem;
+    }
+    &__input {
+        &--txt {
+
+        }
+        &--textarea {
+            resize: none;
+            height: 100px;
+        }
+    }
+}

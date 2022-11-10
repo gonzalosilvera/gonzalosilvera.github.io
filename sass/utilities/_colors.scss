@@ -1,0 +1,23 @@
+// Colors
+$colors: (
+    'white': #EEEEEE,
+    'black': #000000,
+    'lighter-grey': #CCCCCC,
+    'light-grey': #999999,
+    'grey': #666666,
+    'dark-grey': #333333,
+    'darker-grey': #333333,
+    'light-yellow': #ffda40,
+    'dark-yellow': #fbb545,
+    'light-green': #92a14e,
+    'dark-green': #72813c,
+);
+
+@each $name, $hex in $colors {
+    .color-#{$name} {
+        color: $hex;
+    }  
+    .bg-#{$name} {
+        background-color: $hex;
+    }  
+}

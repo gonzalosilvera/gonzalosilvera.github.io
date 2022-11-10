@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonzalo Silvera</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav class="nav">
+        <a class="nav__brand" href="#hero">
+          <h4 class="heading">Gonzalo Silvera</h4>
+        </a>
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="toggle">
+          <span class="toggle__icon"></span>
+        </button>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <section id="hero" class="active">
+      <div class="wrapper">
+        <div class="content content--reverse">
+          <div>
+            <img class="image image--lg" src="assets/images/spica-color.png" />
+          </div>
+          <div class="content content--column content--relative g-0">
+            <h1 class="heading heading--sm">Gonzalo Silvera</h1>
+            <h4 class="heading heading--sm">
+              Web developer based in Montevideo
+            </h4>
+            <a class="btn btn--light btn--absolute" href="#about">Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <div class="wrapper">
+        <div class="content">
+          <div>
+            <img
+              class="image image--md"
+              src="assets/images/uruguay-color.png"
+            />
+          </div>
+          <div class="content content--column content--start g-1">
+            <h2 class="heading heading--sm heading--dark">About</h2>
+            <p class="paragraph">
+              I'm a front-end developer from Montevideo, Uruguay. I studied
+              audiovisual engineering and psychology. I've worked on educational
+              robotics and website development. I'm interested in creating
+              solutions that link human experience and technology.
+            </p>
+            <nav>
+              <ul class="list">
+                <li class="list__item">
+                  <a
+                    class="link"
+                    href="https://www.linkedin.com/in/gonzalosilvera"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="icon"
+                      src="assets/images/linkedin-green.png"
+                      alt="linkedin"
+                    />
+                    <h5 class="heading">Linkedin</h5>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a
+                    class="link"
+                    href="https://github.com/gonzalosilvera"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="icon"
+                      src="assets/images/github-green.png"
+                      alt="social icon"
+                    />
+                    <h5 class="heading">Github</h5>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="wrapper">
+        <div class="content">
+          <div class="content content--column">
+            <div class="content">
+              <h2 class="heading heading--sm heading--dark">Skills</h2>
+              <div class="content content--row">
+                <button class="btn btn--tab active" id="tab-btn-dev">
+                  <h4 class="heading">Front end</h4>
+                </button>
+                <button class="btn btn--tab" id="tab-btn-design">
+                  <h4 class="heading">Design</h4>
+                </button>
+                <button class="btn btn--tab" id="tab-btn-data">
+                  <h4 class="heading">Data</h4>
+                </button>
+              </div>
+            </div>
+            <div class="tabs">
+              <div id="tab-pane-dev" class="tabs__pane active">
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/html5-yellow.png"
+                    alt="html"
+                  />
+                  <h5 class="heading">HTML</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/css3-yellow.png"
+                    alt="css"
+                  />
+                  <h5 class="heading">CSS</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/javascript-yellow.png"
+                    alt="javascript"
+                  />
+                  <h5 class="heading">Javascript</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/bootstrap-yellow.png"
+                    alt="bootstrap"
+                  />
+                  <h5 class="heading">Bootstrap</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/sass-yellow.png"
+                    alt="sass"
+                  />
+                  <h5 class="heading">Sass</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/react-yellow.png"
+                    alt="git"
+                  />
+                  <h5 class="heading">React</h5>
+                </div>
+              </div>
+              <div id="tab-pane-design" class="tabs__pane">
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/photoshop-yellow.png"
+                    alt="photoshop"
+                  />
+                  <h5 class="heading">Photoshop</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/illustrator-yellow.png"
+                    alt="illustrator"
+                  />
+                  <h5 class="heading">Illustrator</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/premiere-yellow.png"
+                    alt="premiere pro"
+                  />
+                  <h5 class="heading">Premiere Pro</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/aftereffects-yellow.png"
+                    alt="after effects"
+                  />
+                  <h5 class="heading">After Effects</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/cubase-yellow.png"
+                    alt="cubase"
+                  />
+                  <h5 class="heading">Cubase</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/figma-yellow.png"
+                    alt="figma"
+                  />
+                  <h5 class="heading">Figma</h5>
+                </div>
+              </div>
+              <div id="tab-pane-data" class="tabs__pane">
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/python-yellow.png"
+                    alt="python"
+                  />
+                  <h5 class="heading">Python</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/r-yellow.png"
+                    alt="r"
+                  />
+                  <h5 class="heading">R</h5>
+                </div>
+                <div class="tabs__pane__item">
+                  <img
+                    class="icon"
+                    src="assets/images/sql-yellow.png"
+                    alt="sql"
+                  />
+                  <h5 class="heading">SQL</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+      <div class="wrapper">
+        <div class="content">
+          <div class="content content--column content--start">
+            <h2 class="heading heading--sm heading--dark">Projects</h2>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              dolore id explicabo, maiores deleniti enim nam nisi. Facilis,
+              adipisci! Dolorem alias sunt nulla ut aperiam odit obcaecati
+              commodi saepe neque!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="wrapper">
+        <div class="grid grid--contact">
+          <h2 class="heading heading--sm heading--dark">Contact</h2>
+          <img class="image image--md" src="assets/images/jacinta-2-color.png" />
+          <form class="form" action="">
+            <label class="form__label" for="contact-name">Name</label>
+            <input class="form__input form__input--txt" type="text" name="name" id="contact-name" autocapitalize="off"/>
+            <label class="form__label" for="contact-mail">E-mail</label>
+            <input class="form__input form__input--txt" type="email" name="email" id="contact-mail" autocapitalize="off"/>
+            <label class="form__label" for="contact-msg">Message</label>
+            <textarea class="form__input form__input--textarea" name="message" id="contact-msg" cols="30" rows="10" autocomplete="off"></textarea>
+            <button class="btn btn--light" type="submit">Send</button>
+          </form> 
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

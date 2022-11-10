@@ -1,0 +1,46 @@
+// Toggle
+
+.toggle {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  $line_height: -8px;
+  z-index: 2;
+  &__icon {
+    @include line-values;
+    top: calc(50%);
+    transition-delay: 0.075s;
+    &::before {
+      @include line-values;
+      top: $line_height;
+      transition: transform 0.075s ease, top 0.4s 0.075s ease;
+    }
+    &::after {
+      @include line-values;
+      bottom: $line_height;
+      transition: transform 0.2s ease, bottom 0.2s 0.2s ease;
+    }
+  }
+  &.active &__icon{
+      background-color: transparent;
+      &::before {
+        top: 0;
+        transform: rotate(-45deg);
+        transition: top 0.2s ease, transform 0.2s 0.2s ease;
+      }
+      &::after {
+        bottom: 0;
+        transform: rotate(45deg);
+        transition: bottom 0.2s ease, transform 0.2s 0.2s ease;
+    }
+  }
+  @media screen and ($breakpoint-lg) {
+    display: none;
+    position: static;
+  }
+}

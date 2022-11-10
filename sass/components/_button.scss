@@ -1,0 +1,72 @@
+// Button
+
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  margin: 1.25rem auto;
+  // border-radius: 50px;
+  cursor: pointer;
+  &--dark {
+    @include btn(
+      $white,
+      transparent,
+      $white,
+      // hover
+      $black,
+      $white,
+      transparent
+    );
+  }
+  &--light {
+    color: $black;
+    background-color: $white;
+    border: solid $black 1px;
+    // @include btn(
+    //   $black,
+    //   transparent,
+    //   $black,
+    //   // hover
+    //   $white,
+    //   $black,
+    //   $black
+    // );
+  }
+  &--color {
+    @include btn(
+      $white,
+      $color,
+      transparent,
+      // hover
+      $black,
+      $white,
+      $black
+    );
+  }
+  &--absolute {
+    @media ($breakpoint-lg) {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+  }
+  &--tab {
+    padding: 0;
+    border: none;
+    margin: 0;
+    .heading {
+      color: $grey;
+      transition: color 0.5s ease;
+    }
+    &:hover {
+      .heading {
+        color: $black;
+      }
+    }
+    &.active {
+      .heading {
+        color: $black;
+      }
+    }
+  }
+}

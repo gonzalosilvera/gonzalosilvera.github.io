@@ -1,0 +1,40 @@
+.tabs {
+  height: 200px;
+  margin-top: 1rem;
+  @media ($breakpoint-lg) {
+    height: 400px;
+  }
+  &__pane {
+    display: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+    @media ($breakpoint-lg) {
+      grid-gap: 3rem 4rem;
+    }
+    &.show {
+      animation: fadeIn .25s ease-in,
+      }
+    &.hide {
+      animation: fadeOut .05s ease-out,
+    }  
+    &.active {
+      display: grid;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        $icon--size: 60px;
+        width: $icon--size;
+        height: $icon--size;
+        @media ($breakpoint-lg) {
+          $icon--size: 100px;
+          width: $icon--size;
+          height: $icon--size;
+        }
+      }
+    }
+  }
+}

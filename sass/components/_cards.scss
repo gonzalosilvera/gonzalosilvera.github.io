@@ -1,0 +1,23 @@
+#cards {
+  background-color: $black;
+  .cards {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media ($breakpoint-lg) {
+      flex-direction: row;
+    }
+    .card {
+      overflow: hidden;
+      background-color: $white;
+      &__img {
+        width: 100%;
+        object-position: center center;
+      }
+      &__text {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}

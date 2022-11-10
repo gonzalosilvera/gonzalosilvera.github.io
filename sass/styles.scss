@@ -1,0 +1,26 @@
+// Global styles
+
+// Utilities
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/colors';
+@import './utilities/fonts';
+@import './utilities/animations';
+
+// components
+@import './components/container';
+@import './components/body';
+@import './components/header';
+@import './components/paragraph';
+@import './components/list';
+@import './components/button';
+@import './components/toggle';
+@import './components/content';
+@import './components/icon';
+@import './components/grid';
+@import './components/tabs';
+@import './components/wrapper';
+@import './components/form';
+@import './components/image';
+@import './components/heading';
+@import './components/section';

@@ -1,0 +1,14 @@
+.image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  &--lg {
+    max-width: 480px;
+  }
+  &--md {
+    max-width: 120px;
+    @media ($breakpoint-lg) {
+      max-width: 240px;
+    }
+  }
+}

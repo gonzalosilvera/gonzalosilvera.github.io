@@ -1,0 +1,50 @@
+// Heading
+.heading {
+  width: max-content;
+  margin: 0;
+  &--dark {
+    @include heading($white, $black);
+  }
+  &--light {
+    @include heading($black, $white);
+  }
+}
+
+h1 {
+  &.heading--sm {
+    font-size: 2.25rem;
+    @media ($breakpoint-sm) {
+      font-size: 2.75rem;
+    }
+    @media ($breakpoint-lg) {
+      font-size: 3rem;
+    }
+  }
+}
+
+h4 {
+  &.heading--sm {
+    font-size: 1.05rem;
+    @media ($breakpoint-sm) {
+      font-size: 1.375rem;
+    }
+    @media ($breakpoint-lg) {
+        font-size: 1.5rem;
+      }
+  
+  }
+}
+
+h2 {
+  &.heading--sm {
+    font-size: 1.925rem;
+    @media ($breakpoint-sm) {
+      font-size: 2.25rem;
+    }
+    @media screen and ($breakpoint-lg) {
+        font-size: 2.5rem;
+        line-height: 1.3em;
+    }
+  }
+}
+

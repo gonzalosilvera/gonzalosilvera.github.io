@@ -1,0 +1,21 @@
+li {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+  &__item {
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .heading {
+        display: none;
+        @media ($breakpoint-lg) {
+          display: block;
+        }
+      }
+    }
+  }
+}
