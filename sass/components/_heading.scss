@@ -2,11 +2,15 @@
 .heading {
   width: max-content;
   margin: 0;
+  border-radius: 10px;
   &--dark {
     @include heading($white, $black);
   }
   &--light {
     @include heading($black, $white);
+  }
+  &--center {
+    margin: auto;
   }
 }
 

@@ -46,11 +46,11 @@
             <img class="image image--lg" src="assets/images/spica-color.png" />
           </div>
           <div class="content content--column content--relative g-0">
-            <h1 class="heading heading--sm">Gonzalo Silvera</h1>
-            <h4 class="heading heading--sm">
-              Web developer based in Montevideo
+            <h1 class="heading heading--sm heading--center">Gonzalo Silvera</h1>
+            <h4 class="heading heading--sm heading--center">
+              Web developer / Media producer
             </h4>
-            <a class="btn btn--light btn--absolute" href="#about">Take a look</a>
+            <a class="btn btn--light btn--absolute" href="#about">Click here</a>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
     <section id="about">
       <div class="wrapper">
         <div class="grid grid--about">
-          <img class="image image--md" src="assets/images/uruguay-color.png"/>
+          <img class="image image--md" src="assets/images/uruguay-color.png" />
           <h2 class="heading heading--sm heading--dark">About</h2>
           <p class="paragraph">
             I'm a front-end developer from Montevideo, Uruguay. I studied
@@ -284,11 +284,7 @@
                 <h5 class="heading">Python</h5>
               </div>
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/r-yellow.png"
-                  alt="r"
-                />
+                <img class="icon" src="assets/images/r-yellow.png" alt="r" />
                 <h5 class="heading">R</h5>
               </div>
               <div class="panes__group__item">
@@ -307,15 +303,23 @@
     <!-- Projects -->
     <section id="projects">
       <div class="wrapper">
-        <div class="content">
-          <div class="content content--column content--start">
-            <h2 class="heading heading--sm heading--dark">Projects</h2>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              dolore id explicabo, maiores deleniti enim nam nisi. Facilis,
-              adipisci! Dolorem alias sunt nulla ut aperiam odit obcaecati
-              commodi saepe neque!
-            </p>
+        <div class="grid">
+          <h2 class="heading heading--sm heading--dark">Projects</h2>
+          <div class="video" style="padding: 56.25% 0 0 0; position: relative">
+            <iframe
+              src="https://player.vimeo.com/video/388575680?h=1ca181be7f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+              title="Reel"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -325,19 +329,42 @@
       <div class="wrapper">
         <div class="grid grid--contact">
           <h2 class="heading heading--sm heading--dark">Contact</h2>
-          <img class="image image--md" src="assets/images/jacinta-2-color.png" />
+          <img
+            class="image image--md"
+            src="assets/images/jacinta-2-color.png"
+          />
           <form class="form" action="">
             <label class="form__label" for="contact-name">Name</label>
-            <input class="form__input form__input--txt" type="text" name="name" id="contact-name" autocapitalize="off"/>
+            <input
+              class="form__input form__input--txt"
+              type="text"
+              name="name"
+              id="contact-name"
+              autocapitalize="off"
+            />
             <label class="form__label" for="contact-mail">E-mail</label>
-            <input class="form__input form__input--txt" type="email" name="email" id="contact-mail" autocapitalize="off"/>
+            <input
+              class="form__input form__input--txt"
+              type="email"
+              name="email"
+              id="contact-mail"
+              autocapitalize="off"
+            />
             <label class="form__label" for="contact-msg">Message</label>
-            <textarea class="form__input form__input--textarea" name="message" id="contact-msg" cols="30" rows="10" autocomplete="off"></textarea>
+            <textarea
+              class="form__input form__input--textarea"
+              name="message"
+              id="contact-msg"
+              cols="30"
+              rows="10"
+              autocomplete="off"
+            ></textarea>
             <button class="btn btn--light" type="submit">Send</button>
-          </form> 
+          </form>
         </div>
       </div>
     </section>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

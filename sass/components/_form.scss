@@ -5,6 +5,10 @@
      margin-top: .5rem;
     }
     &__input {
+        border-radius: 10px ;
+        border: none;
+        background-color: $lighter-grey;
+        padding: 0.5rem 1rem;
         &--txt {
 
         }

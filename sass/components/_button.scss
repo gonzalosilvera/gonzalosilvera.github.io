@@ -5,6 +5,7 @@
   width: fit-content;
   padding: 0.5rem 1rem;
   margin: 1.25rem auto;
+  border-radius: 10px;
   cursor: pointer;
   &--dark {
     @include btn(
@@ -21,15 +22,15 @@
     color: $black;
     background-color: $white;
     border: solid $black 1px;
-    // @include btn(
-    //   $black,
-    //   transparent,
-    //   $black,
-    //   // hover
-    //   $white,
-    //   $black,
-    //   $black
-    // );
+    @include btn(
+      $black,
+      transparent,
+      $black,
+      // hover
+      $white,
+      $black,
+      $black
+    );
   }
   &--color {
     @include btn(
