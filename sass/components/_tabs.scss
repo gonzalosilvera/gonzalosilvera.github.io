@@ -1,29 +1,54 @@
-.tabs {
-  height: 200px;
-  margin-top: 1rem;
-  @media ($breakpoint-lg) {
-    height: 400px;
+// Tabs
+
+// Pills
+.pills {
+  &__item {
+    padding: 0;
+    border: none;
+    margin: 0;
+    .heading {
+      color: $grey;
+      transition: color 0.5s ease;
+    }
+    &:hover {
+      .heading {
+        color: $black;
+      }
+    }
+    &.active {
+      .heading {
+        color: $black;
+      }
+    }
   }
-  &__pane {
+}
+
+// Panes
+.panes {
+  display: grid;
+  align-items: center;
+  &__group {
     display: none;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem 1rem;
     @media ($breakpoint-lg) {
-      grid-gap: 3rem 4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
     }
     &.show {
-      animation: fadeIn .25s ease-in,
-      }
+      animation: fadeIn 0.25s ease-in;
+    }
     &.hide {
-      animation: fadeOut .05s ease-out,
-    }  
+      animation: fadeOut 0.05s ease-out;
+    }
     &.active {
       display: grid;
     }
     &__item {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       .icon {
         $icon--size: 60px;

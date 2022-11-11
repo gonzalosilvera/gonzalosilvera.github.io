@@ -133,7 +133,7 @@ const tabActive = (id) => {
     const tabId = id.split('-')[2];
     const tabButton = document.getElementById(id);
     const tabPane = document.getElementById(`tab-pane-${tabId}`)
-    const tabsPane = document.querySelectorAll(".tabs__pane");
+    const tabsPane = document.querySelectorAll(".panes__group");
     for (const button of tabsButton) {
         button.classList.contains("active") && button.classList.remove("active");
     }
@@ -141,7 +141,7 @@ const tabActive = (id) => {
     switchElement(tabsPane, tabPane);
 };
 
-const tabsButton = document.querySelectorAll('.btn--tab');
+const tabsButton = document.querySelectorAll('.pills__item');
 tabsButton.forEach(item => {
     item.addEventListener("click", e => tabActive(e.currentTarget.id));
 });

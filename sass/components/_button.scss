@@ -5,7 +5,6 @@
   width: fit-content;
   padding: 0.5rem 1rem;
   margin: 1.25rem auto;
-  // border-radius: 50px;
   cursor: pointer;
   &--dark {
     @include btn(
@@ -48,25 +47,6 @@
       position: absolute;
       left: 0;
       right: 0;
-    }
-  }
-  &--tab {
-    padding: 0;
-    border: none;
-    margin: 0;
-    .heading {
-      color: $grey;
-      transition: color 0.5s ease;
-    }
-    &:hover {
-      .heading {
-        color: $black;
-      }
-    }
-    &.active {
-      .heading {
-        color: $black;
-      }
     }
   }
 }
