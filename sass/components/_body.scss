@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
+    position: fixed;
     display: flex;
     flex-direction: column;
     background-color: $white;
-    height: 100vh;
-    min-height: -webkit-fill-available;
+    inset: 0;
 }
