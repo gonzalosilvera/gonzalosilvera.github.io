@@ -1,5 +1,4 @@
 # Ignore folders
 /assets/images/unused
-/assets/svg/
-/sass/
+/assets/svg/unused
 /unused
