@@ -3,6 +3,9 @@ html, body, * {
     padding: 0;
     box-sizing:border-box;
     color: $black;
+}
+
+html, body {
     overflow-y: hidden;
 }
 
