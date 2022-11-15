@@ -2,6 +2,9 @@
 
 // Pills
 .pills {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   &__item {
     padding: 0;
     border: none;
@@ -31,10 +34,11 @@
     display: none;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
-    grid-gap: 2rem 1rem;
-    @media ($breakpoint-lg) {
+    grid-gap: 2rem;
+    @media ($breakpoint-sm) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
       grid-template-rows: repeat(2, minmax(0, 1fr));
+      grid-gap: 2rem 4rem;
     }
     &.show {
       animation: fadeIn 0.25s ease-in;
@@ -50,6 +54,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: .5rem;
       .icon {
         $icon--size: 70px;
         width: $icon--size;

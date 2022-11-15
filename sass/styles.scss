@@ -8,20 +8,28 @@
 @import './utilities/animations';
 
 // components
-@import './components/container';
 @import './components/body';
+@import './components/section';
+@import './components/container';
+@import './components/flex';
+@import './components/grid';
 @import './components/header';
 @import './components/paragraph';
 @import './components/list';
 @import './components/button';
 @import './components/toggle';
-@import './components/content';
 @import './components/icon';
 @import './components/grid';
 @import './components/tabs';
-@import './components/wrapper';
-@import './components/form';
 @import './components/image';
 @import './components/heading';
-@import './components/section';
-@import './components/video';
+@import './components/timeline';
+@import './components/box';
+
+// Sections
+@import './components/hero';
+@import './components/about';
+@import './components/skills';
+@import './components/education';
+@import './components/contact';
+@import './components/footer';

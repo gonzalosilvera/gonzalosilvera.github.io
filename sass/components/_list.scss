@@ -5,6 +5,10 @@ li {
 .list {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  @media ($breakpoint-lg) {
+    justify-content: unset;
+  }
   &__item {
     .link {
       display: flex;

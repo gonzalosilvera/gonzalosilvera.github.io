@@ -1,0 +1,23 @@
+#contact {
+    background-color: $lighter-grey;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "image"
+    "heading"
+    "form";
+  @media ($breakpoint-lg) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "heading heading"
+      "image form";
+  }
+  .heading {
+    grid-area: heading;
+  }
+  .form {
+    grid-area: form;
+  }
+  .image {
+    grid-area: image;
+  }
+}

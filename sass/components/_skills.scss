@@ -1,0 +1,28 @@
+#skills {
+    .grid {
+      grid-gap: 1rem;
+      grid-template-areas:
+        "heading"
+        "pills"
+        "panes";
+      justify-content: center;
+      justify-items: stretch;
+      .heading {
+        grid-area: heading;
+        margin: auto;
+      }
+      .pills {
+        grid-area: pills;
+      }
+      .panes {
+        grid-area: panes;
+        justify-content: space-around;
+        justify-items: center;
+      }
+      @media ($breakpoint-lg) {
+        grid-template-areas:
+          "heading pills"
+          "panes panes";
+      }
+    }
+  }

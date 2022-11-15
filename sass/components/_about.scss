@@ -1,0 +1,22 @@
+#about {
+  .content {
+    gap: 1rem;
+    @media ($breakpoint-lg) {
+      flex-direction: row;
+      align-items: unset;
+    }
+    &__item {
+      flex: 1;
+      gap: 1rem;
+      // @media ($breakpoint-lg) {
+      //   align-items: flex-start;
+      // }
+      .image {
+        margin: auto;
+      }
+      .list {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

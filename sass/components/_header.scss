@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  z-index: 999;
   display: none;
   width: 100%;
   background-color: $header--bg-color;

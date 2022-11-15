@@ -32,22 +32,15 @@
       $black
     );
   }
-  &--color {
+  &--yellow {
     @include btn(
-      $white,
-      $color,
-      transparent,
-      // hover
       $black,
       $white,
+      $black,
+      // hover
+      $black,
+      $light-yellow,
       $black
     );
-  }
-  &--absolute {
-    @media ($breakpoint-lg) {
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
   }
 }

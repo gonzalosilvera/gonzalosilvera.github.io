@@ -4,6 +4,9 @@
   width: 100%;
   &--lg {
     max-width: 480px;
+    @media ($breakpoint-lg) {
+      max-width: 720px;
+    }
   }
   &--md {
     max-width: 120px;

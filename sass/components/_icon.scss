@@ -1,5 +1,6 @@
 .icon {
-    $icon--size: 50px;
+    object-fit: contain;
+    $icon--size: 40px;
     width: $icon--size;
     height: $icon--size;
 }

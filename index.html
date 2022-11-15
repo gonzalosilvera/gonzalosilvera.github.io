@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.png"
+      href="assets/icons/favicon.png"
       type="image/x-icon"
     />
   </head>
@@ -27,10 +27,7 @@
             <a href="#skills">Skills</a>
           </li>
           <li class="nav__list__item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="nav__list__item">
-            <a href="#contact">Contact</a>
+            <a href="#education">Education</a>
           </li>
         </ul>
         <button class="toggle">
@@ -39,91 +36,99 @@
       </nav>
     </header>
     <!-- Hero -->
-    <section id="hero" class="active">
-      <div class="wrapper">
-        <div class="content content--reverse">
-          <div>
+    <section id="hero">
+      <div class="container">
+        <div class="content flex">
+          <div class="content__item">
             <img class="image image--lg" src="assets/images/spica-color.png" />
           </div>
-          <div class="content content--column content--relative g-0">
-            <h1 class="heading heading--sm heading--center">Gonzalo Silvera</h1>
-            <h4 class="heading heading--sm heading--center">
-              Web developer / Media producer
+          <div class="content__item flex">
+            <h1 class="heading heading--center">Gonzalo Silvera</h1>
+            <h4 class="heading heading--center">
+              Web developer based in Montevideo
             </h4>
-            <a class="btn btn--light btn--absolute" href="#about">Click here</a>
+            <a class="btn btn--light" href="#about">Click here</a>
           </div>
         </div>
       </div>
     </section>
     <!-- About -->
     <section id="about">
-      <div class="wrapper">
-        <div class="grid grid--about">
-          <img class="image image--md" src="assets/images/uruguay-color.png" />
-          <h2 class="heading heading--sm heading--dark">About</h2>
-          <p class="paragraph">
-            I'm a front-end developer from Montevideo, Uruguay. I studied
-            audiovisual engineering and psychology. I've worked on educational
-            robotics and website development. I'm interested in creating
-            solutions that link human experience and technology.
-          </p>
-          <ul class="list">
-            <li class="list__item">
-              <a
-                class="link"
-                href="https://www.linkedin.com/in/gonzalosilvera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="icon"
-                  src="assets/images/linkedin-green.png"
-                  alt="linkedin"
-                />
-                <h5 class="heading">Linkedin</h5>
-              </a>
-            </li>
-            <li class="list__item">
-              <a
-                class="link"
-                href="https://github.com/gonzalosilvera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="icon"
-                  src="assets/images/github-green.png"
-                  alt="social icon"
-                />
-                <h5 class="heading">Github</h5>
-              </a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="content flex">
+          <!-- <div class="content__item flex">
+            <img
+              class="image image--md"
+              src=""
+            />
+          </div> -->
+          <div class="content__item flex">
+            <h2 class="heading heading--dark">About</h2>
+            <div class="box">
+              <p class="paragraph">
+                I'm a front-end developer from Montevideo, Uruguay. I studied
+                audiovisual engineering, psychology and data science. I'm interested in creating
+                solutions that link human experience and technology.
+              </p>
+              <ul class="list">
+                <li class="list__item">
+                  <a
+                    class="link"
+                    href="https://www.linkedin.com/in/gonzalosilvera"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="icon"
+                      src="assets/images/linkedin.png"
+                      alt="linkedin"
+                    />
+                    <h5 class="heading">Linkedin</h5>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a
+                    class="link"
+                    href="https://github.com/gonzalosilvera"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="icon"
+                      src="assets/images/github.png"
+                      alt="social icon"
+                    />
+                    <h5 class="heading">Github</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills -->
     <section id="skills">
-      <div class="wrapper">
-        <div class="grid grid--skills">
-          <h2 class="heading heading--sm heading--dark">Skills</h2>
+      <div class="container">
+        <div class="grid">
+          <h2 class="heading heading--dark">Skills</h2>
           <div class="pills">
             <button class="pills__item active" id="tab-pill-dev">
-              <h4 class="heading">Front end</h4>
+              <h3 class="heading">Front end</h3>
             </button>
             <button class="pills__item" id="tab-pill-design">
-              <h4 class="heading">Design</h4>
+              <h3 class="heading">Design</h3>
             </button>
             <button class="pills__item" id="tab-pill-data">
-              <h4 class="heading">Data</h4>
+              <h3 class="heading">Data</h3>
             </button>
           </div>
-          <div class="panes">
+          <div class="panes box">
             <div id="tab-pane-dev" class="panes__group active">
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/html5-yellow.png"
+                  src="assets/images/html5.png"
                   alt="html"
                 />
                 <h5 class="heading">HTML</h5>
@@ -131,7 +136,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/css3-yellow.png"
+                  src="assets/images/css3.png"
                   alt="css"
                 />
                 <h5 class="heading">CSS</h5>
@@ -139,7 +144,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/javascript-yellow.png"
+                  src="assets/images/javascript.png"
                   alt="javascript"
                 />
                 <h5 class="heading">Javascript</h5>
@@ -147,7 +152,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/bootstrap-yellow.png"
+                  src="assets/images/bootstrap.png"
                   alt="bootstrap"
                 />
                 <h5 class="heading">Bootstrap</h5>
@@ -155,7 +160,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/sass-yellow.png"
+                  src="assets/images/sass.png"
                   alt="sass"
                 />
                 <h5 class="heading">Sass</h5>
@@ -163,8 +168,8 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/react-yellow.png"
-                  alt="git"
+                  src="assets/images/react.png"
+                  alt="react"
                 />
                 <h5 class="heading">React</h5>
               </div>
@@ -173,7 +178,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/photoshop-yellow.png"
+                  src="assets/images/photoshop.png"
                   alt="photoshop"
                 />
                 <h5 class="heading">Photoshop</h5>
@@ -181,7 +186,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/illustrator-yellow.png"
+                  src="assets/images/illustrator.png"
                   alt="illustrator"
                 />
                 <h5 class="heading">Illustrator</h5>
@@ -189,7 +194,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/premiere-yellow.png"
+                  src="assets/images/premiere.png"
                   alt="premiere pro"
                 />
                 <h5 class="heading">Premiere Pro</h5>
@@ -197,7 +202,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/aftereffects-yellow.png"
+                  src="assets/images/aftereffects.png"
                   alt="after effects"
                 />
                 <h5 class="heading">After Effects</h5>
@@ -205,111 +210,118 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/cubase-yellow.png"
+                  src="assets/images/cubase.png"
                   alt="cubase"
                 />
                 <h5 class="heading">Cubase</h5>
-              </div>
-              <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/figma-yellow.png"
-                  alt="figma"
-                />
-                <h5 class="heading">Figma</h5>
               </div>
             </div>
             <div id="tab-pane-data" class="panes__group">
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/python-yellow.png"
+                  src="assets/images/python.png"
                   alt="python"
                 />
                 <h5 class="heading">Python</h5>
               </div>
               <div class="panes__group__item">
-                <img class="icon" src="assets/images/r-yellow.png" alt="r" />
+                <img class="icon" src="assets/images/r.png" alt="r" />
                 <h5 class="heading">R</h5>
               </div>
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/sql-yellow.png"
+                  src="assets/images/sql.png"
                   alt="sql"
                 />
                 <h5 class="heading">SQL</h5>
+              </div>
+              <div class="panes__group__item">
+                <img
+                  class="icon"
+                  src="assets/images/git.png"
+                  alt="git"
+                />
+                <h5 class="heading">GIT</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Projects -->
-    <section id="projects">
-      <div class="wrapper">
-        <div class="grid">
-          <h2 class="heading heading--sm heading--dark">Projects</h2>
-          <div class="video" style="padding: 56.25% 0 0 0; position: relative">
-            <iframe
-              src="https://player.vimeo.com/video/388575680?h=1ca181be7f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-              "
-              title="Reel"
-            ></iframe>
-          </div>
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <div class="content flex">
+          <h2 class="heading heading--dark">Education</h2>
+          <ul class="timeline">
+            <li class="timeline__event">
+              <div class="timeline__event__year">
+                <h3 class="heading">2024</h3>
+              </div>
+              <div class="timeline__event__info box">
+                <h5 class="heading">Master's degree in Data Science</h5>
+                <p class="paragraph paragraph--institute">
+                  Universidad Tecnológica del Uruguay
+                </p>
+              </div>
+            </li>
+            <li class="timeline__event">
+              <div class="timeline__event__year">
+                <h3 class="heading">2020</h3>
+              </div>
+              <div class="timeline__event__info box">
+                  <h5 class="heading">Bachelor's degree in Psychology</h5>
+                  <p class="paragraph paragraph--institute">
+                    Universidad Católica del Uruguay
+                  </p>
+              </div>
+            </li>
+            <li class="timeline__event">
+              <div class="timeline__event__year">
+                <h3 class="heading">2016</h3>
+              </div>
+              <div class="timeline__event__info box">
+                <h5 class="heading">
+                  Bachelor's degree in Audiovisual Engineering
+                </h5>
+                <p class="paragraph">Universidad Católica del Uruguay</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <!-- Contact -->
-    <section id="contact">
-      <div class="wrapper">
-        <div class="grid grid--contact">
-          <h2 class="heading heading--sm heading--dark">Contact</h2>
-          <img
-            class="image image--md"
-            src="assets/images/jacinta-2-color.png"
-          />
-          <form class="form" action="">
-            <label class="form__label" for="contact-name">Name</label>
-            <input
-              class="form__input form__input--txt"
-              type="text"
-              name="name"
-              id="contact-name"
-              autocapitalize="off"
-            />
-            <label class="form__label" for="contact-mail">E-mail</label>
-            <input
-              class="form__input form__input--txt"
-              type="email"
-              name="email"
-              id="contact-mail"
-              autocapitalize="off"
-            />
-            <label class="form__label" for="contact-msg">Message</label>
-            <textarea
-              class="form__input form__input--textarea"
-              name="message"
-              id="contact-msg"
-              cols="30"
-              rows="10"
-              autocomplete="off"
-            ></textarea>
-            <button class="btn btn--light" type="submit">Send</button>
-          </form>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="content flex">
+          <p class="copyright">Copyright © 2022</p>
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a href="https://www.linkedin.com/in/gonzalosilvera/">
+                <img
+                  class="icon"
+                  src="assets/images/linkedin-white.png"
+                  alt="linkedin"
+                />
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://github.com/gonzalosilvera">
+                <img
+                  class="icon"
+                  src="assets/images/github-white.png"
+                  alt="github"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="mail">gonzalosilvera@gmail.com</p>
         </div>
       </div>
-    </section>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

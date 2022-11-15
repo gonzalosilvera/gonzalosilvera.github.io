@@ -2,120 +2,141 @@
 
 // Montserrat
 @font-face {
-    font-family: Montserrat;
-    src: url('/assets/fonts/Montserrat-VariableFont_wght.ttf');
-    font-weight: bold;
+  font-family: Montserrat;
+  src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: bold;
 }
 
 // Lato
 @font-face {
-    font-family: Lato;
-    font-weight: normal;
-    src: url('/assets/fonts/Lato-Regular.ttf');
+  font-family: Lato;
+  font-weight: normal;
+  src: url("/assets/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
-    font-family: Lato;
-    font-weight: bold;
-    src: url('/assets/fonts/Lato-Bold.ttf');
+  font-family: Lato;
+  font-weight: bold;
+  src: url("/assets/fonts/Lato-Bold.ttf");
 }
 
 // Paragraph
-html, body, * {
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-    @media screen and ($breakpoint-lg) {
-        font-size: 18px;
-        line-height: 1.7em;
-    }
+html,
+body,
+* {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  @media screen and ($breakpoint-lg) {
+    font-size: 18px;
+    line-height: 1.7em;
+  }
 }
 
 br {
-    margin: 5em;
+  margin: 5em;
 }
 
 // Heading
-h1, h2 {
-    font-family: Montserrat, Verdana, Tahoma, sans-serif;
-    font-weight: bold;
+h1,
+h2 {
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
-h3, h4, h5 {
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    font-weight: bold;
+h3,
+h4,
+h5 {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
-p, h1, h2, h3, h4, h5 {
-    margin: 0.5rem 0;
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5rem 0;
 }
 
 h1 {
+  font-size: 2.25rem;
+  line-height: 1.2em;
+  @media ($breakpoint-sm) {
     font-size: 2.75rem;
-    line-height: 1.2em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 3rem;
-    }
-    @media screen and ($breakpoint-lg) {
-        font-size: 3rem;
-    }
-
+  }
+  @media screen and ($breakpoint-lg) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
+  font-size: 2rem;
+  line-height: 1.2em;
+  @media ($breakpoint-sm) {
     font-size: 2.25rem;
-    line-height: 1.2em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 2.5rem;
-        line-height: 1.3em;
-    }
+  }
+  @media screen and ($breakpoint-lg) {
+    font-size: 2.5rem;
+    line-height: 1.3em;
+  }
 }
 
 h3 {
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  @media ($breakpoint-sm) {
     font-size: 1.75rem;
-    line-height: 1.3em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 2rem;
-    }
+  }
+  @media screen and ($breakpoint-lg) {
+    font-size: 2rem;
+  }
 }
 
 h4 {
+  font-size: 1.125rem;
+  line-height: 1.2em;
+  @media ($breakpoint-sm) {
     font-size: 1.375rem;
-    line-height: 1.2em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 1.5rem;
-        line-height: 1.3em;
-    }
+  }
+  @media screen and ($breakpoint-lg) {
+    font-size: 1.5rem;
+    line-height: 1.3em;
+  }
 }
 
 h5 {
+  font-size: .875rem;
+  line-height: 1.4em;
+  @media ($breakpoint-sm) {
     font-size: 1.125rem;
-    line-height: 1.4em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 1.125rem;
-    }
+  }
+  @media screen and ($breakpoint-lg) {
+    font-size: 1.125rem;
+  }
 }
 
 // Button
 .btn {
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    // font-weight: bold;
-    font-size: 0.9375rem;
-    line-height: 1.1em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 1.125rem;
-    }
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  // font-weight: bold;
+  font-size: 0.9375rem;
+  line-height: 1.1em;
+  @media screen and ($breakpoint-lg) {
+    font-size: 1.125rem;
+  }
 }
 
 a {
-    font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-underline-offset: 2px;
+  line-height: 1.7em;
+  @media screen and ($breakpoint-lg) {
     font-size: 1rem;
-    text-decoration: none;
-    text-underline-offset: 2px;
-    line-height: 1.7em;
-    @media screen and ($breakpoint-lg) {
-        font-size: 1rem;
-    }
+  }
 }

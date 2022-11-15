@@ -53,58 +53,6 @@ const navToggle = () => {
 const toggleButton = document.querySelector('.toggle');
 toggleButton.addEventListener("click", navToggle);
 
-// Switch from current section to target section 
-const switchSection = (elementsArray, targetElement) => {
-    for (const element of elementsArray) {
-        if (element !== targetElement && element.classList.contains("active")) {
-            const windowWidth = window.innerWidth;
-            const navList = document.querySelector(".nav__list");
-            const header = document.querySelector("header");
-            if (windowWidth >= 992 || !navList.classList.contains("active")) {
-                targetElement.id === "hero" && hideElement(header);
-                hideElement(element, () => {
-                    (element.id === "hero" && targetElement.id !== "hero") && showElement(header);
-                    showElement(targetElement);
-                });
-            }
-            else if (windowWidth < 992 && navList.classList.contains("active")) {
-                element.classList.remove("active")
-                if (targetElement.id === "hero") {
-                    hideElement(header, () => {
-                        navList.classList.remove("active")
-                        toggleButton.classList.remove("active")
-                        showElement(targetElement);
-                    });
-                }
-                else {
-                    toggleButton.classList.remove("active")
-                    hideElement(navList, () => {
-                        navList.classList.remove("active")
-                        showElement(targetElement);
-                    });
-                }
-            }
-        }
-    }
-};
-
-// Buttons & links elements
-const brandLink = document.querySelector('.nav__brand');
-const heroLink = document.querySelector('#hero .btn');
-const navLinks = document.querySelectorAll('.nav__list__item a');
-
-// Array with buttons & links elements
-const sectionLinks = [brandLink, heroLink, ...navLinks];
-
-// Add event listener to buttons & links elements
-sectionLinks.forEach(item => {
-    item.addEventListener("click", e => {
-        const sections = document.querySelectorAll("section")
-        const targetSectionId = e.currentTarget.href.split('#')[1];
-        const targetSection = document.getElementById(targetSectionId);
-        switchSection(sections, targetSection);
-    });
-});
 
 // Navigation bar
 
@@ -145,3 +93,17 @@ const tabsButton = document.querySelectorAll('.pills__item');
 tabsButton.forEach(item => {
     item.addEventListener("click", e => tabActive(e.currentTarget.id));
 });
+
+// Reveal navigation bar when scrolling to position V1
+function scrollFunction() {
+    const header = document.querySelector("header");
+    const position = window.innerHeight - header.clientHeight;
+    if (document.documentElement.scrollTop >= position) {
+        !header.classList.contains("active") && header.classList.add("active");
+    } else {
+        header.classList.contains("active") && header.classList.remove("active");
+        !header.classList && header.removeAttribute("class");
+    }
+}
+// Execute function on scroll
+window.onscroll = scrollFunction;
