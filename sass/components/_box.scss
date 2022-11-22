@@ -1,8 +1,8 @@
 .box {
     background-color: $lighter-grey;
-    padding: 1.25rem 1.5rem;
+    padding:  0 1.25rem 1.5rem;
     border-radius: 10px;
     @media ($breakpoint-lg) {
-        padding: 1.5rem 2rem;
+        padding: 0 2rem;
     }
 }

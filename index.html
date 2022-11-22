@@ -15,65 +15,61 @@
   <body>
     <!-- Navigation bar -->
     <header>
-      <nav class="nav">
-        <a class="nav__brand" href="#hero">
-          <h4 class="heading">Gonzalo Silvera</h4>
-        </a>
-        <ul class="nav__list">
-          <li class="nav__list__item">
-            <a href="#about">About</a>
-          </li>
-          <li class="nav__list__item">
-            <a href="#skills">Skills</a>
-          </li>
-          <li class="nav__list__item">
-            <a href="#education">Education</a>
-          </li>
-        </ul>
-        <button class="toggle">
-          <span class="toggle__icon"></span>
-        </button>
-      </nav>
-    </header>
-    <!-- Hero -->
-    <section id="hero">
       <div class="container">
-        <div class="content flex">
-          <div class="content__item">
-            <img class="image image--lg" src="assets/images/spica-color.png" />
-          </div>
-          <div class="content__item flex">
-            <h1 class="heading heading--center">Gonzalo Silvera</h1>
-            <h4 class="heading heading--center">
-              Web developer based in Montevideo
-            </h4>
-            <a class="btn btn--light" href="#about">Click here</a>
+        <nav class="nav">
+          <a class="nav__brand" href="#hero">
+            <h4 class="heading">Gonzalo Silvera</h4>
+          </a>
+          <ul role="list" class="nav__list">
+            <li class="nav__list__item">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#education">Education</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#skills">Skills</a>
+            </li>
+          </ul>
+          <button class="toggle">
+            <span class="toggle__icon"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="two-columns">
+            <div class="column column--img">
+              <img class="image" src="assets/images/spica-color.png" />
+            </div>
+            <div class="column column--txt">
+              <h1 class="heading heading--center">Gonzalo Silvera</h1>
+              <h4 class="heading heading--center">
+                Web developer based in Montevideo
+              </h4>
+              <a class="btn btn--light" href="#about">click here</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="content flex">
-          <div class="content__item">
-            <img
-              class="image"
-              src="assets/images/about.png"
-            />
-          </div>
-          <div class="content__item flex">
-            <h2 class="heading heading--dark">About</h2>
-            <div class="box">
+      </section>
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="two-columns box">
+            <div class="column column--txt">
+              <h2 class="heading heading--dark">About</h2>
               <p class="paragraph">
-                I'm a front-end developer from Montevideo, Uruguay. I studied
-                audiovisual engineering, psychology and data science. I'm interested in creating
-                solutions that link human experience and technology.
+                I'm a front-end developer from Montevideo, Uruguay. I'm
+                interested in creating solutions that link human experience and
+                technology.
               </p>
-              <ul class="list">
+              <ul role="list" class="list">
                 <li class="list__item">
                   <a
-                    class="link"
+                    aria-label="linkedin"
                     href="https://www.linkedin.com/in/gonzalosilvera"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -88,7 +84,7 @@
                 </li>
                 <li class="list__item">
                   <a
-                    class="link"
+                    aria-label="github"
                     href="https://github.com/gonzalosilvera"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -103,48 +99,86 @@
                 </li>
               </ul>
             </div>
+            <div class="column column--img">
+              <img class="image" src="assets/images/about.png" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills">
-      <div class="container">
-        <div class="grid">
-          <h2 class="heading heading--dark">Skills</h2>
-          <div class="pills">
-            <button class="pills__item active" id="tab-pill-dev">
-              <h3 class="heading">Front end</h3>
-            </button>
-            <button class="pills__item" id="tab-pill-design">
-              <h3 class="heading">Design</h3>
-            </button>
-            <button class="pills__item" id="tab-pill-data">
-              <h3 class="heading">Data</h3>
-            </button>
+      </section>
+      <!-- Education -->
+      <section id="education">
+        <div class="container">
+          <div class="one-column">
+            <h2 class="heading heading--dark">Education</h2>
+            <ul class="timeline">
+              <li class="timeline__event">
+                <div class="timeline__event__year">
+                  <h3 class="heading">2024</h3>
+                </div>
+                <div class="timeline__event__info box">
+                  <h5 class="heading">Master's degree in Data Science</h5>
+                  <p class="paragraph paragraph--institute">
+                    Universidad Tecnológica del Uruguay
+                  </p>
+                </div>
+              </li>
+              <li class="timeline__event">
+                <div class="timeline__event__year">
+                  <h3 class="heading">2020</h3>
+                </div>
+                <div class="timeline__event__info box">
+                  <h5 class="heading">Bachelor's degree in Psychology</h5>
+                  <p class="paragraph paragraph--institute">
+                    Universidad Católica del Uruguay
+                  </p>
+                </div>
+              </li>
+              <li class="timeline__event">
+                <div class="timeline__event__year">
+                  <h3 class="heading">2016</h3>
+                </div>
+                <div class="timeline__event__info box">
+                  <h5 class="heading">
+                    Bachelor's degree in Audiovisual Engineering
+                  </h5>
+                  <p class="paragraph">Universidad Católica del Uruguay</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="panes box">
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills">
+        <div class="container">
+          <div class="one-column">
+            <h2 class="heading heading--dark">Skills</h2>
+            <div class="pills">
+              <button class="pills__item active" id="tab-pill-dev">
+                <h3 class="heading">Front end</h3>
+              </button>
+              <button class="pills__item" id="tab-pill-design">
+                <h3 class="heading">Design</h3>
+              </button>
+              <button class="pills__item" id="tab-pill-data">
+                <h3 class="heading">Data</h3>
+              </button>
+            </div>
+          </div>
+          <div class="panes">
             <div id="tab-pane-dev" class="panes__group active">
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/html5.png"
-                  alt="html"
-                />
+                <img class="icon" src="assets/images/html5.svg" alt="html" />
                 <h5 class="heading">HTML</h5>
               </div>
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/css3.png"
-                  alt="css"
-                />
+                <img class="icon" src="assets/images/css3.svg" alt="css" />
                 <h5 class="heading">CSS</h5>
               </div>
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/javascript.png"
+                  src="assets/images/javascript.svg"
                   alt="javascript"
                 />
                 <h5 class="heading">Javascript</h5>
@@ -152,33 +186,21 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/bootstrap.png"
+                  src="assets/images/bootstrap.svg"
                   alt="bootstrap"
                 />
                 <h5 class="heading">Bootstrap</h5>
               </div>
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/sass.png"
-                  alt="sass"
-                />
+                <img class="icon" src="assets/images/sass.svg" alt="sass" />
                 <h5 class="heading">Sass</h5>
-              </div>
-              <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/react.png"
-                  alt="react"
-                />
-                <h5 class="heading">React</h5>
               </div>
             </div>
             <div id="tab-pane-design" class="panes__group">
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/photoshop.png"
+                  src="assets/images/photoshop.svg"
                   alt="photoshop"
                 />
                 <h5 class="heading">Photoshop</h5>
@@ -186,7 +208,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/illustrator.png"
+                  src="assets/images/illustrator.svg"
                   alt="illustrator"
                 />
                 <h5 class="heading">Illustrator</h5>
@@ -194,7 +216,7 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/premiere.png"
+                  src="assets/images/premiere.svg"
                   alt="premiere pro"
                 />
                 <h5 class="heading">Premiere Pro</h5>
@@ -202,104 +224,45 @@
               <div class="panes__group__item">
                 <img
                   class="icon"
-                  src="assets/images/aftereffects.png"
+                  src="assets/images/aftereffects.svg"
                   alt="after effects"
                 />
                 <h5 class="heading">After Effects</h5>
               </div>
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/cubase.png"
-                  alt="cubase"
-                />
+                <img class="icon" src="assets/images/cubase.svg" alt="cubase" />
                 <h5 class="heading">Cubase</h5>
               </div>
             </div>
             <div id="tab-pane-data" class="panes__group">
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/python.png"
-                  alt="python"
-                />
+                <img class="icon" src="assets/images/python.svg" alt="python" />
                 <h5 class="heading">Python</h5>
               </div>
               <div class="panes__group__item">
-                <img class="icon" src="assets/images/r.png" alt="r" />
+                <img class="icon" src="assets/images/r.svg" alt="r" />
                 <h5 class="heading">R</h5>
               </div>
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/sql.png"
-                  alt="sql"
-                />
+                <img class="icon" src="assets/images/sql.svg" alt="sql" />
                 <h5 class="heading">SQL</h5>
               </div>
               <div class="panes__group__item">
-                <img
-                  class="icon"
-                  src="assets/images/git.png"
-                  alt="git"
-                />
+                <img class="icon" src="assets/images/git.svg" alt="git" />
                 <h5 class="heading">GIT</h5>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Education -->
-    <section id="education">
-      <div class="container">
-        <div class="content flex">
-          <h2 class="heading heading--dark">Education</h2>
-          <ul class="timeline">
-            <li class="timeline__event">
-              <div class="timeline__event__year">
-                <h3 class="heading">2024</h3>
-              </div>
-              <div class="timeline__event__info box">
-                <h5 class="heading">Master's degree in Data Science</h5>
-                <p class="paragraph paragraph--institute">
-                  Universidad Tecnológica del Uruguay
-                </p>
-              </div>
-            </li>
-            <li class="timeline__event">
-              <div class="timeline__event__year">
-                <h3 class="heading">2020</h3>
-              </div>
-              <div class="timeline__event__info box">
-                  <h5 class="heading">Bachelor's degree in Psychology</h5>
-                  <p class="paragraph paragraph--institute">
-                    Universidad Católica del Uruguay
-                  </p>
-              </div>
-            </li>
-            <li class="timeline__event">
-              <div class="timeline__event__year">
-                <h3 class="heading">2016</h3>
-              </div>
-              <div class="timeline__event__info box">
-                <h5 class="heading">
-                  Bachelor's degree in Audiovisual Engineering
-                </h5>
-                <p class="paragraph">Universidad Católica del Uruguay</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="content flex">
+        <div class="one-column">
           <p class="copyright">Copyright © 2022</p>
-          <ul class="social-links">
-            <li class="social-links__item">
+          <ul class="list">
+            <li class="list__item">
               <a href="https://www.linkedin.com/in/gonzalosilvera/">
                 <img
                   class="icon"
@@ -308,7 +271,7 @@
                 />
               </a>
             </li>
-            <li class="social-links__item">
+            <li class="list__item">
               <a href="https://github.com/gonzalosilvera">
                 <img
                   class="icon"

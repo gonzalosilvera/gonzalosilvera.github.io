@@ -49,6 +49,24 @@ const navToggle = () => {
     }
 };
 
+// // Buttons & links elements
+// const brandLink = document.querySelector('.nav__brand');
+// const heroLink = document.querySelector('#hero .btn');
+// const navLinks = document.querySelectorAll('.nav__list__item a');
+
+// // Array with buttons & links elements
+// const sectionLinks = [brandLink, heroLink, ...navLinks];
+
+// // Add event listener to buttons & links elements
+// sectionLinks.forEach(item => {
+//     item.addEventListener("click", e => {
+//         const sections = document.querySelectorAll("section")
+//         const targetSectionId = e.currentTarget.href.split('#')[1];
+//         const targetSection = document.getElementById(targetSectionId);
+//         switchElement(sections, targetSection);
+//     });
+// });
+
 // Add event listener to toggle button
 const toggleButton = document.querySelector('.toggle');
 toggleButton.addEventListener("click", navToggle);

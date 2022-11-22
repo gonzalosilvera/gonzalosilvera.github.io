@@ -1,5 +1,37 @@
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0 2rem;
+  @media ($breakpoint-lg) {
+    flex-direction: row;
+  }
+  &--reverse {
+    @media ($breakpoint-lg) {
+      flex-direction: row-reverse;
+    }
+  }
+  &--start {
+    @media ($breakpoint-lg) {
+      align-items: flex-start;
+    }
+  }
+  &--row {
+    flex-direction: row;
+    gap: 1rem;
+    @media ($breakpoint-lg) {
+      gap: 2rem;
+    }
+  }
+  &--column {
+    @media ($breakpoint-lg) {
+      flex-direction: column;
+    }
+  }
+  &--relative {
+    @media ($breakpoint-lg) {
+      display: block;
+      position: relative;
+    }
+  }
 }

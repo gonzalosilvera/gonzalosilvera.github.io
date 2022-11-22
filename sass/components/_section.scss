@@ -1,7 +1,4 @@
-section:not(#hero) {
+section {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    &.about {
-        background-color: $lighter-grey;
-    }
 }

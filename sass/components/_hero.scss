@@ -3,12 +3,7 @@
     min-height: fit-content;
     display: flex;
     align-items: center;
-    .content {
-        @media ($breakpoint-lg) {
-            flex-direction: row-reverse;
-            align-items: center;
-            gap: 1rem;
-        }
+    .flex {
         &__item {
             @media ($breakpoint-lg) {
                 position: relative;

@@ -2,15 +2,16 @@
 
 // Pills
 .pills {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
   &__item {
+    background-color: unset;
     padding: 0;
     border: none;
     margin: 0;
     .heading {
-      color: $grey;
+      color: $dark-green;
       transition: color 0.5s ease;
     }
     &:hover {
@@ -29,17 +30,8 @@
 // Panes
 .panes {
   display: grid;
-  align-items: center;
   &__group {
     display: none;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    grid-gap: 2rem;
-    @media ($breakpoint-sm) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-template-rows: repeat(2, minmax(0, 1fr));
-      grid-gap: 2rem 4rem;
-    }
     &.show {
       animation: fadeIn 0.25s ease-in;
     }
@@ -48,6 +40,11 @@
     }
     &.active {
       display: grid;
+      grid-template-columns: repeat(auto-fit, 100px);
+      justify-content: center;
+      justify-items: center;
+      grid-gap: 2rem;
+      margin-top: 2rem;
     }
     &__item {
       display: flex;
@@ -56,11 +53,11 @@
       align-items: center;
       gap: .5rem;
       .icon {
-        $icon--size: 70px;
+        $icon--size: 60px;
         width: $icon--size;
         height: $icon--size;
         @media ($breakpoint-lg) {
-          $icon--size: 100px;
+          $icon--size: 80px;
           width: $icon--size;
           height: $icon--size;
         }
