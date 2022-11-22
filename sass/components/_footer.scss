@@ -1,44 +1,24 @@
 footer {
-    width: 100%;
-    padding: 1rem;
-    background-color: $black;
-    * {
-        color: $white;
+  background-color: $black;
+  .one-column {
+    padding-block: 1rem;
+    align-items: center;
+    & > * {
+      color: $white;
     }
-    .container {
-        .content {
-            justify-content: center;
-        }
-        @media ($breakpoint-lg) {
-            position: relative;
-        }
-        .copyright {
-            margin: 0;
-            order: 3;
-            @media ($breakpoint-lg) {
-                position: absolute;
-                left: 20px;
-            }    
-        }
-        .social-links {
-            display: flex;
-            order: 1;
-            gap: 2rem;
-            margin: auto;
-            &__item img {
-                width: 50px;
-            }
-        }
-        .mail {
-            order: 2;
-            @media ($breakpoint-lg) {
-                position: absolute;
-                right: 20px;
-            }    
-        }
+    @media ($breakpoint-lg) {
+      grid-auto-flow: column;
+      grid-template-columns: repeat(3, 1fr);
     }
-}
-
-#linkedin {
-    stroke: green;
+    .list {
+      display: flex;
+      gap: 2rem;
+    }
+    .copyright {
+      order: 3;
+      @media ($breakpoint-lg) {
+        order: unset;
+      }
+    }
+  }
 }
